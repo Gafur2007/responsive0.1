@@ -1,0 +1,49 @@
+.header .container {
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    & .nav__list {
+        display: flex;
+        align-items: center;
+        text-transform: uppercase;
+
+        & .nav__item+.nav__item {
+            margin-left: 33px;
+
+        }
+
+        & .nav__link {
+            color: #83888F;
+            font-family: "Barlow";
+            font-size: 12px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: 15px;
+
+            
+        }
+        & .nav__link:hover {
+            transition: all 0.5s;
+            color: #000;
+            text-decoration: underline;
+        }
+    }
+
+}
+.button {
+    display: none;
+    width: 20px;
+    height: 20px;
+    background: #000;
+}
+@media only screen and (max-width: 634px) {
+    .nav {
+        display: none;
+    }
+
+    .button {
+        display: block;
+    }
+}
